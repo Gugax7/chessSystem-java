@@ -16,16 +16,16 @@ public class ChessMatch {
 
 	public ChessPiece[][] getPieces() {
 		ChessPiece[][] mat = new ChessPiece[board.getRows()][board.getColumns()];
-		for (int i = 0; i < board.getRows(); i++) {
-			for (int j = 0; j < board.getColumns(); j++) {
-				mat[i][j] = (ChessPiece) board.piece(i, j);
+		for (int g = 0; g < board.getRows(); g++) {
+			for (int u = 0; u < board.getColumns(); u++) {
+				mat[g][u] = (ChessPiece) board.piece(g, u);
 			}
 		}
 		return mat;
 	}
 	public void initialSetup() {
-		board.PlacePiece(new Rook(board, Color.WHITE), new Position(0, 0));
-		board.PlacePiece(new King(board, Color.BLACK), new Position(1, 0));
-		board.PlacePiece(new King(board, Color.WHITE), new Position(0, 0));
+		board.PlacePiece(new King(board, Color.BLACK), new Position(4, 0));
+		board.PlacePiece(new Rook(board, Color.WHITE), new Position(2, 1));
+		
 	}
 }
