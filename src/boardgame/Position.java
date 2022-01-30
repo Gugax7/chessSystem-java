@@ -30,7 +30,10 @@ public class Position {
 	public String toString() {
 		return "Position [column= " + column + ", row= " + row + "]";
 	}
-	
+	public void setValues(int row, int column) {
+		this.row = row;
+		this.column = column;
+	}
 	
 
 }
